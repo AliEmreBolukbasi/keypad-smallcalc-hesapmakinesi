@@ -1,0 +1,48 @@
+#include <main.h>
+#define LCD_ENABLE_PIN PIN_B2
+#define LCD_RS_PIN PIN_B0
+#define LCD_RW_PIN PIN_B1
+#define LCD_DATA4 PIN_B3
+#define LCD_DATA5 PIN_B4
+#define LCD_DATA6 PIN_B5
+#define LCD_DATA7 PIN_B6
+
+#include <lcd.c>
+
+
+void islemler(){
+delay_ms(100)
+printf(lcd_putc,"=");
+switch(islem){
+case 1 :
+sonuc=deger+sayi;
+printf(lcd_putc,"%ld",sonuc);
+sonuc=0;
+tus=0;
+islem=0;
+sayi=0;
+deger=0;
+break;
+case 2:
+}
+
+
+
+
+
+}
+void main()
+{
+   
+
+
+   lcd_init();
+
+   lcd_putc("\fReady...\n");
+
+   while(TRUE)
+   {
+      
+   }
+
+}
